@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Living Ledger Design System - Professional Finance Platform
+All colors MUST be HSL for perfect theming.
+*/
+
+@layer base {
+  :root {
+    /* Base Colors - Clean and Professional */
+    --background: 220 20% 97%;
+    --foreground: 220 25% 8%;
+
+    /* Card System - Elevated and Clean */
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 8%;
+
+    /* Interactive Elements */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 8%;
+
+    /* Primary Brand - Deep Financial Blue */
+    --primary: 220 70% 15%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 220 60% 25%;
+
+    /* Secondary - Professional Gray */
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 220 25% 8%;
+
+    /* Muted Elements */
+    --muted: 220 15% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    /* Accent - Trust Green */
+    --accent: 160 70% 20%;
+    --accent-foreground: 0 0% 98%;
+    --accent-light: 160 50% 35%;
+
+    /* Financial Success Green */
+    --success: 140 70% 25%;
+    --success-foreground: 0 0% 98%;
+    --success-light: 140 50% 85%;
+
+    /* Financial Warning */
+    --warning: 40 90% 50%;
+    --warning-foreground: 40 25% 8%;
+    --warning-light: 40 80% 90%;
+
+    /* Destructive - Financial Loss Red */
+    --destructive: 0 75% 45%;
+    --destructive-foreground: 0 0% 98%;
+    --destructive-light: 0 60% 90%;
+
+    /* Borders and Inputs */
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 220 70% 15%;
+
+    /* Gradients - Financial Sophistication */
+    --gradient-primary: linear-gradient(135deg, hsl(220 70% 15%), hsl(220 60% 25%));
+    --gradient-success: linear-gradient(135deg, hsl(140 70% 25%), hsl(160 70% 20%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 70% 15%), hsl(160 70% 20%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(220 15% 98%));
+    --gradient-accent: linear-gradient(135deg, hsl(160 70% 20%), hsl(140 70% 25%));
+
+    /* Shadows - Elevated Finance Cards */
+    --shadow-sm: 0 2px 8px hsl(220 25% 8% / 0.08);
+    --shadow-md: 0 4px 20px hsl(220 25% 8% / 0.12);
+    --shadow-lg: 0 8px 40px hsl(220 25% 8% / 0.16);
+    --shadow-financial: 0 8px 32px hsl(220 70% 15% / 0.15);
+
+    /* Animation Timing */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
